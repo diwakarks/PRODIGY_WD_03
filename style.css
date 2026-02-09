@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Card */
+.card {
+  background: #1f2933;
+  padding: 25px;
+  border-radius: 14px;
+  width: 340px;
+  border: 2px solid #00adb5;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.card h1 {
+  margin-bottom: 15px;
+  color: #00e5ff;
+}
+
+/* Mode Buttons */
+.mode-buttons {
+  margin-bottom: 15px;
+}
+
+.mode-buttons button {
+  padding: 8px 14px;
+  margin: 0 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #374151;
+  color: #fff;
+}
+
+.mode-buttons .active {
+  background: #00adb5;
+}
+
+/* Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin: 15px 0;
+}
+
+.cell {
+  height: 90px;
+  background: #111827;
+  border-radius: 8px;
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cell:hover {
+  background: #1e293b;
+}
+
+.cell.disabled {
+  pointer-events: none;
+}
+
+/* Player Labels */
+.players {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0 12px;
+  font-weight: 600;
+}
+
+.players span {
+  color: #e5e7eb;
+}
+
+/* Status Text */
+.status-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #ffd369;
+}
+
+/* Reset */
+.reset {
+  margin-top: 10px;
+  padding: 9px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #ff5722;
+  color: white;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: #ff784e;
+}
